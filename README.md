@@ -17,7 +17,6 @@
 this is [链接](https:// "Title") inline link
 
 **加粗**
-==高亮==
 ~~删除线~~
 *斜体*
 
@@ -58,7 +57,6 @@ this is [链接](https:// "Title") inline link
 </div>
 ```
 **加粗**
-==高亮==
 ~~删除线~~
 *斜体*
 

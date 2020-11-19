@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function phone(mobile) {
+            return String(mobile).substr(0, 3) + "*".repeat(4) + String(mobile).substr(-4, 4);
+        }
+        console.log(phone(15010200732));
+    </script>
+</body>
+</html>

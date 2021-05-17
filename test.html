@@ -8,25 +8,41 @@
 <body>
     
     <script>
-        let arr = [1, 3, 6, 5, 2];
-        function sort(array, callback){
-            for(const n in array) {
-                for(const m in array){
-                    if(callback(array[n], array[m]) < 0){
-                        const temp = array[n];
-                        array[n] = array[m];
-                        array[m] = temp;
-                    }
-                }
-            }
-            return array;
-        }
-        arr = sort(arr, function(a, b){
-            return a - b; 
-        })
-        console.log(arr);
+
+        //迭代器
+        let arr = ['wang', 'fu'];
+        let entries = arr.entries(); //Array Iterator {}
+        console.log(entries.next()); //{value: [0, "wang"], done: false}
+        //console.log(keys) //Array Iterator {}
+        // console.log(keys.next()); // {value: 0, done: false}
+        // console.log(keys.next()); // {value: 1, done: false}
+        // console.log(keys.next()); // {value: undefined, done: true}
+        // let {value, done} = values.next();
+        // console.log(value, done); // wang false
+        // let user = [
+        //     {
+        //         name: 'lisi', js: 89
+        //     },
+        //     {name: 'zhangsan', js: 55}
+        // ];
+        // const res = user.every(function(item){
+        //     return item.js >= 60;
+        // });
+        // console.log(res)
+
+        // some 如果有任何一个返回真 则为真
+        // every 全部为真 返回真
+
+        // let arr = ['shdjjd', 'kshd', 'sjjjsj'];
+        // arr.filter(function(value, index, arr){
+        //     console.log(value)
+        // })
+
+        // 过滤
+
+
     </script>
 </body>
 </html>
 
-<!-- 接着 73 -->
+<!-- 接着 78 -->

@@ -8,41 +8,22 @@
 <body>
     
     <script>
-
-        //迭代器
-        let arr = ['wang', 'fu'];
-        let entries = arr.entries(); //Array Iterator {}
-        console.log(entries.next()); //{value: [0, "wang"], done: false}
-        //console.log(keys) //Array Iterator {}
-        // console.log(keys.next()); // {value: 0, done: false}
-        // console.log(keys.next()); // {value: 1, done: false}
-        // console.log(keys.next()); // {value: undefined, done: true}
-        // let {value, done} = values.next();
-        // console.log(value, done); // wang false
-        // let user = [
-        //     {
-        //         name: 'lisi', js: 89
-        //     },
-        //     {name: 'zhangsan', js: 55}
-        // ];
-        // const res = user.every(function(item){
-        //     return item.js >= 60;
-        // });
-        // console.log(res)
-
-        // some 如果有任何一个返回真 则为真
-        // every 全部为真 返回真
-
-        // let arr = ['shdjjd', 'kshd', 'sjjjsj'];
-        // arr.filter(function(value, index, arr){
-        //     console.log(value)
-        // })
-
-        // 过滤
-
-
+        let user1 = {
+            name: "张三",
+            key: Symbol()
+        };
+        let user2 = {
+            name: "张三",
+            key: Symbol()
+        };
+        
+        let grade = {
+            [user1.key]: {js: 98, css: 90},
+            [user2.key]: {js: 10, css: 20},
+        }
+        console.log(grade[user1.key]);
     </script>
 </body>
 </html>
 
-<!-- 接着 78 -->
+<!-- 接着 91 -->
